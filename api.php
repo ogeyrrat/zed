@@ -194,7 +194,7 @@ $rp1 = array(
 
 $ch = curl_init();
 
-//curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
+curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
 
 curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
 
@@ -262,7 +262,7 @@ $token = trim(strip_tags(getStr($result1,'"id": "','"')));
 
 $ch = curl_init();
 
-//curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
+curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
 
 curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
 
